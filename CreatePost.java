@@ -5,20 +5,20 @@ public class CreatePost extends State{
             super(post);
         }
 
-        @Override
+         @Override
         public void MakePost() {
-            System.out.println("Самолет вышел из гаража");
+            System.out.println("Пост придумывается");
             post.setState(new Moderation(post));
         }
 
         @Override
         public void ModeratePost() {
-            System.out.println("Самолет уже в гараже");
+            System.out.println("Пост еще придумывается");
         }
 
         @Override
         public void ReadyToPublic() {
-            System.out.println("Пост еще не придумат=н, чтобы его публиковать");
+            System.out.println("Пост еще не придуман, чтобы его публиковать");
         }
 
 
